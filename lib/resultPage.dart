@@ -3,9 +3,9 @@ import 'package:quiz_app/const.dart';
 import 'package:quiz_app/play_quiz_screen.dart';
 
 class ResultPage extends StatelessWidget {
-  int correctAns;
-  int wrongAns;
-  ResultPage({super.key, required this.correctAns, required this.wrongAns});
+  final int correctAns;
+  final int wrongAns;
+  const ResultPage({super.key, required this.correctAns, required this.wrongAns});
 
   @override
   Widget build(BuildContext context) {

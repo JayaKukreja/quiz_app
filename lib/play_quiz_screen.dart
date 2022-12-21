@@ -72,7 +72,6 @@ class _PlayQuizScreenState extends State<PlayQuizScreen> {
                               selectedAnswer = model.options[index];
                               correctAnswer = model.correctAnswer;
                             });
-                            print("isanswerlocked: $isAnswerLocked");
                           },
                           child: Container(
                             width: double.infinity,
@@ -106,7 +105,6 @@ class _PlayQuizScreenState extends State<PlayQuizScreen> {
       ),
       bottomNavigationBar: InkWell(
         onTap: () {
-          print("isAnswerLocked: $isAnswerLocked");
           if (isAnswerLocked) {
             currentIndex++;
             isAnswerLocked = false;
@@ -126,10 +124,7 @@ class _PlayQuizScreenState extends State<PlayQuizScreen> {
                             wrongAns: wrongAnswers,
                           )));
             }
-            print("correctAnswers: $correctAnswers");
-            print("wrongAnswers: $wrongAnswers");
           } else {
-            print("SElect please");
           }
         },
         child: Container(
